@@ -1,4 +1,4 @@
-# seat_booking
+# Seat Booking
 Running the Project
 
 1. set the environment
