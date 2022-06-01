@@ -28,6 +28,10 @@ def occupiedSeats(request):
     })
 
 @csrf_exempt
+def getDetails(request):
+    return render(request,"add_details.html")
+
+@csrf_exempt
 def makePayement(request):
     data=json.loads(request.body)
     seat_numbers=list(map(lambda seat: seat+1,data["seat_list"]))
